@@ -1,4 +1,4 @@
-```markdown
+
 # SmartTravelAPP 🌍✈️
 
 [![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-deployed-streamlit-app-url.com)
