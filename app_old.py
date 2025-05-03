@@ -32,9 +32,10 @@ except ImportError:
         return f"Placeholder response for prompt: {prompt[:100]}..."
 
 # --- Load Environment Variables ---
-OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
-WEATHER_API_KEY = st.secrets.get("WEATHER_API_KEY", os.getenv("WEATHER_API_KEY"))
-CURRENCY_API_KEY = st.secrets.get("CURRENCY_API_KEY", os.getenv("CURRENCY_API_KEY")) # Using ExchangeRate-API.com for this example
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
+CURRENCY_API_KEY = os.getenv("CURRENCY_API_KEY") # Using ExchangeRate-API.com for this example
 
 # Basic validation for API Keys
 if not OPENAI_API_KEY:
