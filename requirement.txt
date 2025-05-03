@@ -1,0 +1,10 @@
+streamlit
+streamlit-folium
+folium
+geopy
+duckduckgo-search
+requests
+beautifulsoup4
+pycountry
+python-dotenv
+openai
